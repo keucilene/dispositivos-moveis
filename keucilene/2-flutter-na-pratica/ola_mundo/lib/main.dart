@@ -12,16 +12,11 @@ class AppWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      padding: EdgeInsets.all(30),
-      child: Center(
-        child: Text(
-          tittle,
-          textDirection: TextDirection.ltr,
-          style: TextStyle(
-            color: Colors.white,
-            fontSize: 80.00,
-          ),
+    return MaterialApp(
+      theme: ThemeData(primaryColor: Colors.green),
+      home: Container(
+        child: Center(
+          child: Text('Material App'),
         ),
       ),
     );
