@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 void main() {
   runApp(AppWidget(
-    tittle: 'Aula ADS Tittle',
+    tittle: 'Aula ADS',
   ));
 }
 
@@ -16,11 +16,11 @@ class AppWidget extends StatelessWidget {
       padding: EdgeInsets.all(30),
       child: Center(
         child: Text(
-          'Aula ADS Mobile',
+          tittle,
           textDirection: TextDirection.ltr,
           style: TextStyle(
             color: Colors.white,
-            fontSize: 40.00,
+            fontSize: 80.00,
           ),
         ),
       ),
