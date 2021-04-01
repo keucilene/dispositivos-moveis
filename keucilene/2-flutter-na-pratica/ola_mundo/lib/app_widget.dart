@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:ola_mundo/app_controller.dart';
-import 'home_page.dart';
+import 'package:ola_mundo/login_page.dart';
 
 class AppWidget extends StatelessWidget {
   final String tittle;
@@ -18,7 +18,7 @@ class AppWidget extends StatelessWidget {
                 ? Brightness.dark
                 : Brightness.light,
           ),
-          home: HomePage(),
+          home: LoginPage(),
         );
       },
     );
