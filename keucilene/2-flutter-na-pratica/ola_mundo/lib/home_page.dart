@@ -17,6 +17,7 @@ class HomePageState extends State<HomePage> {
     return Scaffold(
       appBar: AppBar(
         title: Text('App ADS'),
+        actions: [CustomSwitch()],
       ),
       body: Center(
         child: CustomSwitch(),
