@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 
 class HomePage extends StatefulWidget {
@@ -13,10 +12,18 @@ class HomePageState extends State<HomePage> {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      child: Center(
+    return Scaffold(
+      appBar: AppBar(
+        title: Text('App ADS'),
+      ),
+      body: Center(
         child: GestureDetector(
-          child: Text('Clique: $counter'),
+          child: Text(
+            'Clique: $counter',
+            style: TextStyle(
+              fontSize: 50,
+            ),
+          ),
           onTap: () {
             setState(() {
               counter++;
