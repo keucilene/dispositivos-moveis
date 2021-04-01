@@ -16,21 +16,10 @@ class HomePageState extends State<HomePage> {
       appBar: AppBar(
         title: Text('App ADS'),
       ),
-      body: Center(
-        child: GestureDetector(
-          child: Text(
-            'Clique: $counter',
-            style: TextStyle(
-              fontSize: 50,
-            ),
-          ),
-          onTap: () {
-            setState(() {
-              counter++;
-              // print(counter);
-            });
-          },
-        ),
+      body: Container(
+        height: 50,
+        width: 50,
+        color: Colors.green,
       ),
       floatingActionButton: FloatingActionButton(
         child: Icon(Icons.add_circle),
