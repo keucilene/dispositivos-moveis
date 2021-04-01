@@ -27,10 +27,19 @@ class HomePageState extends State<HomePage> {
           onTap: () {
             setState(() {
               counter++;
-              print(counter);
+              // print(counter);
             });
           },
         ),
+      ),
+      floatingActionButton: FloatingActionButton(
+        child: Icon(Icons.add_circle),
+        onPressed: () {
+          setState(() {
+            counter--;
+            // print(counter);
+          });
+        },
       ),
     );
   }
