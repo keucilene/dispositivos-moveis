@@ -12,15 +12,22 @@ class HomePageState extends State<HomePage> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text('App ADS'),
-      ),
-      body: Container(
+    var container = Container(
+      height: 150,
+      width: 150,
+      color: Colors.red,
+      child: Container(
         height: 50,
         width: 50,
         color: Colors.green,
       ),
+    );
+
+    return Scaffold(
+      appBar: AppBar(
+        title: Text('App ADS'),
+      ),
+      body: container,
       floatingActionButton: FloatingActionButton(
         child: Icon(Icons.add_circle),
         onPressed: () {
