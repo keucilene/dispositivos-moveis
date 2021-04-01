@@ -21,7 +21,9 @@ class HomePageState extends State<HomePage> {
         child: Switch(
           value: isDark,
           onChanged: (value) {
-            print(value);
+            setState(() {
+              isDark = value;
+            });
           },
         ),
       ),
